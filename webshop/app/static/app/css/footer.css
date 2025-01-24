@@ -1,0 +1,59 @@
+.footer{
+    padding-top: 20px;
+    background: var(--white-color);
+    border-top: 2px solid var(--primary-color);
+}
+
+.footer__heading{
+    color: var(--black-color);
+    font-size: 1.8rem;
+}
+
+.footer-list{
+    text-decoration: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item-link{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+.footer-item-link__icon{
+
+}
+
+.footer-item-link__icon-youtube{
+    color: #ff0033;
+}
+
+.footer-item-link__icon-gmail{
+    color:#fbbc04;
+}
+
+.footer-item-link__icon-facebook{
+    color: #0866ff;
+}
+
+.footer__download-qr{
+    width: 80px;
+    height: 80px;
+}
+
+.footer__download-apps{
+    width: 80px;
+    display: flex;
+}
+
+.footer__download-apps > img{
+    width: 50%;
+}
+
+.footer__text{
+    padding: 5px;
+    color: var(--black-color);
+}

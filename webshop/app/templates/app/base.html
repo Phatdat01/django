@@ -1,0 +1,1092 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'app/css/base.css' %}">
+    <link rel="stylesheet" href="{%static 'app/css/header.css' %}">
+    <link rel="stylesheet" href="{%static 'app/css/main.css' %}">
+    <link rel="stylesheet" href="{%static 'app/css/product.css' %}">
+    <link rel="stylesheet" href="{%static 'app/css/page.css' %}">
+    <link rel="stylesheet" href="{%static 'app/css/footer.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__nav-list">
+                        <a href="/" class="header__nav-item header__has-qr header__nav-item--separate">
+                            Home Page
+                            <!-- QR hover -->
+                            <div class="header__qr">
+                                <img src="{%static 'app/uploads/qr.svg' %}" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                        <img src="https://www.codot.gov/safety/impaired-driving/planahead/2011-assets/android-market-icon.png/@@images/image" alt="GG Play" class="header__qr-download-img">
+                                        <img src="https://banner2.cleanpng.com/20180811/byt/1450168e13161f627efe482020d85224.webp" alt="App store" class="header__qr-download-img">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://facebook.com" class="header__nav-item header__nav-icon">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                            Facebook
+                        </a>
+                    </ul>
+                    <ul class="header__nav-list header__has-notice">
+                        <div class="header__nav-item header__nav-icon header__action-notice">
+                                <i class="fa-solid fa-bell"></i>
+                                Notice
+                            <div class="header__notice">
+                                <header class="header__notice-header">
+                                    <h3>Notice</h3>
+                                </header>
+                                <a class="header__notice-link header__notice-link--viewed" href="">
+                                    <span>
+                                        <img class="header__notice-img" src="https://photo.znews.vn/w660/Uploaded/gtnzjz/2019_05_30/IMG_0606.jpg" alt="Ảnh tb">
+                                    </span>
+                                    <div class="header__notice-info">
+                                        <div class="header__notice-info-name">Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+                                        <div class="header__notice-info-des">Sự xuất hiện trong thời kỳ đầu tiên của nó trên Trái Đất là do các hoạt động quang hợp của vi khuẩn kỵ khí (vi khuẩn cổ và vi khuẩn). Sự phổ biến của nó từ sau đó đến ngày nay là do hoạt động quang hợp của tảo biển. Oxy là nguyên tố phổ biến xếp hàng thứ 3 trong vũ trụ theo khối lượng sau hydro và heli[6] và là nguyên tố phổ biến nhất theo khối lượng trong vỏ Trái Đất,[7] chiếm gần một nửa vỏ Trái đất ở dạng</div>
+                                    </div>
+                                </a>
+                                <a class="header__notice-link" href="">
+                                    <span>
+                                        <img class="header__notice-img" src="https://ispacedanang.edu.vn/wp-content/uploads/2024/05/hinh-anh-dep-ve-hoc-sinh-cap-3-1.jpg" alt="Ảnh tb">
+                                    </span>
+                                    <div class="header__notice-info">
+                                        <div class="header__notice-info-name">Hi</div>
+                                        <div class="header__notice-info-des">Mình là Tran</div>
+                                    </div>
+                                </a>
+                                <a class="header__notice-link" href="">
+                                    <span>
+                                        <img class="header__notice-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwByCApQDaZIP3CSO4tyq084FHPk09uwro2w&s" alt="Ảnh tb">
+                                    </span>
+                                    <div class="header__notice-info">
+                                        <div class="header__notice-info-name">Hello</div>
+                                        <div class="header__notice-info-des">Tôi là A</div>
+                                    </div>
+                                </a>
+                                <footer class="header__notice-footer">
+                                    <a class="header__notice-all">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </div>
+                        <a class="header__nav-item header__nav-icon">
+                            <i class="fa-solid fa-question"></i>
+                            Help
+                        </a>
+                        <!-- <a class="header__nav-item header__nav-icon header__nav-item--strong header__nav-item--separate">Login</a>
+                        <a class="header__nav-item header__nav-item--strong">Register</a> -->
+
+                        <li class="header__nav-item header__navbar-user">
+                            <img src="https://th.bing.com/th/id/R.41921164a5125add470627e30d1286cc?rik=FzPBS2DwEt5Dfw&pid=ImgRaw&r=0" class="header__nav-item-img" alt="avatar">
+                            <span class="header__nav-item-username">Tran Dat</span>
+                        
+                            <div class="header__nav-usermenu">
+                                <a href="" class="header_nav-user-item">
+                                    My Account
+                                </a>
+                                <a href="" class="header_nav-user-item">
+                                    Puchase
+                                </a>
+                                <a href="" class="header_nav-user-item">
+                                    Log Out
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__search">
+                    <div class="header__logo">
+                        <img class='header__logo-img' src="https://yt3.ggpht.com/TOtmD2p_vUxmjZBxEVKm32vizGBNAe_WyMvjwowxVgF4hDAjJIijdqOkEaz5OmDs5y26GYATbQ=s176-c-k-c0x00ffffff-no-rj-mo" alt="Logo">
+                    </div>
+                    <div class="header__search-select">
+                        <input type="text" class="header__search-input" placeholder="Searching">
+                        <div class="header__search-info">
+                            <div class="header__search-heading">Search history</div>
+                            <li class="header__search-item">
+                                <a class="header__search-previous">Human</a>
+                                <div class="header__search-del">
+                                    <i class="header__search-del-icon fa-solid fa-x"></i>
+                                </div>
+                            </li>
+                            <li class="header__search-item">
+                                <a class="header__search-previous">Warehouse</a>
+                                <div class="header__search-del">
+                                    <i class="header__search-del-icon fa-solid fa-x"></i>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <button class="header__search-btn primary-btn">
+                        Search
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa fa-shopping-cart" aria-hidden="true"></i>
+                            
+                            <span class="header__cart-notice">2</span>
+                            <!-- Cart layout -->
+                             <!-- Hash .header__cart-no-list-->
+                            <div class="header__cart-list">
+
+                                <!-- If .header__cart-no-list on parent, it show -->
+                                <img src="https://cdn-icons-png.flaticon.com/512/102/102661.png" alt="No cart" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-cart-mess">
+                                    No product
+                                </span>
+                                <!--  -->
+
+                                <h5 class="header__cart-heading">Product Carts</h3>
+                                <div class="header__cart-item">
+                                    <div class="header__cart-img">
+                                        <img src="https://th.bing.com/th/id/OIP.Nia8NcZLgly5CjOqGkokZgHaJO?rs=1&pid=ImgDetMain" alt="Ảnh">
+                                    </div>
+                                    <div class="header__cart-item-content">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-name">Hot Girl</div>
+                                            <div class="cart-item-product">
+                                                <span class="header__cart-item-price">2.000.000đ</span>
+                                                <span class="header__cart-item-multily">x</span>
+                                                <span class="header__cart-item-qnt">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <div class="header__cart-item-des">Type: Silver</div>
+                                            <div class="header__cart-item-del">
+                                                <i class="fa-solid fa-x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="header__cart-item">
+                                    <div class="header__cart-img">
+                                        <img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-con-gai-1-1.jpg" alt="Ảnh">
+                                    </div>
+                                    <div class="header__cart-item-content">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-name">Beautiful Girl</div>
+                                            <div class="cart-item-product">
+                                                <span class="header__cart-item-price">10.000.000đ</span>
+                                                <span class="header__cart-item-multily">x</span>
+                                                <span class="header__cart-item-qnt">3</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <div class="header__cart-item-des">Type: Gold</div>
+                                            <div class="header__cart-item-del">
+                                                <i class="fa-solid fa-x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="header__cart-btn">See Carts</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row app_content">
+                    <div class="grid__column-2">
+                        <div class="category">
+                            <h3 class="category__heading">
+                                <i class="fa-solid fa-list category__heading-icon"></i>
+                                <span>Category</span>
+                            </h3>
+                            <nav class="category-list">
+                                <a href="" class="category-item category-item-active">
+                                    <i class="fa-solid fa-hat-cowboy"></i>
+                                    Hat
+                                </a>
+                                <a href="" class="category-item">
+                                    <i class="fa-solid fa-vest"></i>
+                                    Vest
+                                </a>
+                                <a href="" class="category-item">
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    Dress
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                    <div class="grid__column-10">
+                        <div class="home-filters">
+                            <div class="home-filters-child">
+                                <span class="home-filter__label">
+                                    Filter by
+                                </span>
+                                <button class="home-filter">Famous</button>
+                                <button class="home-filter primary-btn">Newest</button>
+                                <button class="home-filter">Sell</button>
+                                <div class="select-input">
+                                    <span class="select-input__label">Cost</span>
+                                    <i class="fas fa-angle-down"></i>
+
+                                    <div class="home-filter-to">
+                                        <div class="home-filter-bot home-filter-bot-to-top">
+                                            Bot to Top
+                                        </div>
+                                        <div class="home-filter-bot home-filter-top-to-bot">
+                                            Top to Bot
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>
+                                    /20
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn__ban">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://ispacedanang.edu.vn/wp-content/uploads/2024/05/hinh-anh-dep-ve-hoc-sinh-cap-3-1.jpg);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">12.000.000đ</div>
+                                                <div class="home-product-item__price-curent">10.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://pbs.twimg.com/media/FtM-DmmWcAknPys?format=jpg&name=4096x4096);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">12.000.000đ</div>
+                                                <div class="home-product-item__price-curent">10.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://th.bing.com/th/id/OIP.IyS-sfHHRNBPnNHMulYNdAHaLH?rs=1&pid=ImgDetMain);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">15.000.000đ</div>
+                                                <div class="home-product-item__price-curent">10.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://th.bing.com/th/id/R.ffe22afb22e68a46466675048855d8fc?rik=99xSUjDNNRmlgg&pid=ImgRaw&r=0);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">13.000.000đ</div>
+                                                <div class="home-product-item__price-curent">10.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://sohanews.sohacdn.com/2018/9/26/photo-1-1537956393162593583605.jpg);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">11.000.000đ</div>
+                                                <div class="home-product-item__price-curent">10.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://th.bing.com/th/id/OIP.vQkxz0S56x7Z4_yIRa73RAAAAA?rs=1&pid=ImgDetMain);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">10.000.000đ</div>
+                                                <div class="home-product-item__price-curent">6.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://ispacedanang.edu.vn/wp-content/uploads/2024/05/hinh-anh-dep-ve-hoc-sinh-cap-3-1.jpg);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">5.000.000đ</div>
+                                                <div class="home-product-item__price-curent">3.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://th.bing.com/th/id/OIP.gr8K8s0-nPQZNGAmKW8RhAHaLH?rs=1&pid=ImgDetMain);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">9.000.000đ</div>
+                                                <div class="home-product-item__price-curent">4.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://i.pinimg.com/originals/c7/78/d0/c778d0ff8ba8955e2b421b47402f2945.jpg);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">12.000.000đ</div>
+                                                <div class="home-product-item__price-curent">10.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://i.pinimg.com/736x/44/18/a4/4418a4d2859f2ccb91583dc2b4823fe2.jpg);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">13.000.000đ</div>
+                                                <div class="home-product-item__price-curent">11.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://th.bing.com/th/id/OIP.Y8bKtudzrZo3epJUe1O46AAAAA?rs=1&pid=ImgDetMain);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">12.000.000đ</div>
+                                                <div class="home-product-item__price-curent">10.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://i.pinimg.com/736x/9d/e8/0b/9de80bdd76a734dda8c2bc7a28cb033b.jpg);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Hot Girl</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">12.000.000đ</div>
+                                                <div class="home-product-item__price-curent">10.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://64.media.tumblr.com/c46a1b4d47e992235c24a606eee51a77/7960b68359a0ab88-d9/s400x600/c3e8c8ba13a980dc1e277039b27b5c3daca5f394.jpg);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh Summer</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">12.000.000đ</div>
+                                                <div class="home-product-item__price-curent">10.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://th.bing.com/th/id/OIP.ZkgblYd3yJaExlhSiZJMaAAAAA?rs=1&pid=ImgDetMain);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh Dep</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">12.000.000đ</div>
+                                                <div class="home-product-item__price-curent">10.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://th.bing.com/th/id/OIP.RePqvby9smfH9yOglE2n9AHaJv?w=500&h=658&rs=1&pid=ImgDetMain);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh Xan</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">12.000.000đ</div>
+                                                <div class="home-product-item__price-curent">10.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://www.cpophome.com/wp-content/uploads/2023/02/Jing-Ruyang-2.jpg);"></div>
+                                        <div class="home-product-item__info">
+                                            <h4 class="home-product-item__name">Gai xinh Nha</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">12.000.000đ</div>
+                                                <div class="home-product-item__price-curent">10.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- home-product-item__active if active -->
+                                                <div class="home-product-item__like home-product-item__active">
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="home-product-item__star">
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                    <i class="fa fa-star home-product-item__active" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">20 Soldout</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <div class="home-product-item__brand">Dat 09</div>
+                                                <div class="home-product-item__origin-name">Hellon</div>
+                                            </div>
+                                            <div class="home-product-item__favourite primary-btn" style="">
+                                                <i class="fa fa-check"></i>
+                                                <div class="home-product-item__favourite-item">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <div class="home-product-item__sale-off-percent">10%</div>
+                                                <div class="home-product-item__sale-off-label">Discount</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <ul class="pagination">
+                            <a href="" class="pagination-item">
+                                <i class="pagination-item__icon fas fa-angle-left"></i>
+                            </a>
+                            <a href="" class="pagination-item pagination-item-active">1</a>
+                            <a href="" class="pagination-item">2</a>
+                            <a href="" class="pagination-item">3</a>
+                            <a href="" class="pagination-item">4</a>
+                            <a href="" class="pagination-item">5</a>
+                            <a href="" class="pagination-item">6</a>
+                            <a href="" class="pagination-item">7</a>
+                            <a href="" class="pagination-item">...</a>
+                            <a href="" class="pagination-item">
+                                <i class="pagination-item__icon fas fa-angle-right"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <nav class="footer__navbar">
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="grid__column-2">
+                            <h3 class="footer__heading">Take Care</h3>
+                            <ul class="footer-list">
+                                <a href="" class="footer-item-link">Help Center</a>
+                                <a href="" class="footer-item-link">Gmail</a>
+                                <a href="" class="footer-item-link">Help Purchase</a>
+                            </ul>
+                        </div>
+
+                        <div class="grid__column-2">
+                            <h3 class="footer__heading">Introduce</h3>
+                            <ul class="footer-list">
+                                <a href="" class="footer-item-link">Introduce</a>
+                                <a href="" class="footer-item-link">Career</a>
+                                <a href="" class="footer-item-link">Contract</a>
+                            </ul>
+                        </div>
+                        <div class="grid__column-2">
+                            <h3 class="footer__heading">Social</h3>
+                            <ul class="footer-list">
+                                <a href="" class="footer-item-link">
+                                    <i class="fa fa-facebook footer-item-link__icon footer-item-link__icon-facebook" aria-hidden="true"></i>
+                                    Facebook
+                                </a>
+                                <a href="" class="footer-item-link">
+                                    <i class="fa fa-address-card footer-item-link__icon footer-item-link__icon-gmail" aria-hidden="true"></i>
+                                    Gmail
+                                </a>
+                                <a href="" class="footer-item-link">
+                                    <i class="fa-brands fa-youtube footer-item-link__icon footer-item-link__icon-youtube"></i>
+                                    Youtube
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="grid__column-2">
+                            <h3 class="footer__heading">Help Center</h3>
+                            <ul class="footer-list">
+                                <a href="" class="footer-item-link">Policy</a>
+                                <a href="" class="footer-item-link">Security</a>
+                            </ul>
+                        </div>
+                        <div class="grid__column-2">
+                            <h3 class="footer__heading">Download</h3>
+                            <div class="footer__download">
+                                <img src="{%static 'app/uploads/qr.svg' %}" alt="" class="footer__download-qr">
+                                <div src="" alt="" class="footer__download-apps">
+                                    <img src="https://www.codot.gov/safety/impaired-driving/planahead/2011-assets/android-market-icon.png/@@images/image" alt="CH Play" class="footer__download-app-img">
+                                    <img src="https://banner2.cleanpng.com/20180811/byt/1450168e13161f627efe482020d85224.webp" alt="Google" class="footer__download-app-img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-2">
+                            <h3 class="footer__heading">Another</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <p class="footer__text">
+                            @ 2024 Copy Right belong to TPD
+                        </p>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+    </div>
+    <!-- POP UP -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- Register -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__header">
+                    <h3 class="auth-form__heading">
+                        Register
+                    </h3>
+                    <div class="auth-form__switch">Login</div>
+                </div>
+                <div class="auth-form__form">
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input" placeholder="username">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="password" class="auth-form__input" placeholder="password">
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy">
+                            By Register, You accept
+                            <a href="" class="auth-form__policy-text">Policy</a> &
+                            <a href="" class="auth-form__policy-text">Security</a>
+                        </p>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="auth-form__controls-return">Return</button>
+                        <button class="auth-form__controls-register">Register</button>
+                    </div>
+
+                    <div class="auth-form__social">
+                        <a class="auth-form__controls--with-icon auth-form__controls-facebook">
+                            <i class="fab fa-facebook-square"></i>
+                            Connect Facebook
+                        </a>
+                        <a class="auth-form__controls--with-icon auth-form__controls-google">
+                            <i class="fab fa-google"></i>
+                            Connect Google
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Login -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__header">
+                    <h3 class="auth-form__heading">
+                        Login
+                    </h3>
+                    <div class="auth-form__switch">Register</div>
+                </div>
+                <div class="auth-form__form">
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input" placeholder="username">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="password" class="auth-form__input" placeholder="password">
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__action">
+                            <a href="" class="auth-form__action-forget">Foget password</a>
+                            <a href="" class="auth-form__action-help">Help?</a>
+                        </p>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="auth-form__controls-return">Return</button>
+                        <button class="auth-form__controls-login">Login</button>
+                    </div>
+
+                    <div class="auth-form__social">
+                        <a class="auth-form__controls--with-icon-login auth-form__controls-sms">
+                            <i class="fab fa-facebook-square"></i>
+                            Connect SMS
+                        </a>
+                        <a class="auth-form__controls--with-icon-login auth-form__controls-facebook">
+                            <i class="fab fa-facebook-square"></i>
+                            Connect Facebook
+                        </a>
+                        <a class="auth-form__controls--with-icon-login auth-form__controls-google">
+                            <i class="fab fa-google"></i>
+                            Connect Google
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-whatever-integrity-value" crossorigin="anonymous"></script>
+</body>
+</html>
